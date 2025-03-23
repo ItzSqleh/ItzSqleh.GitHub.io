@@ -84,57 +84,6 @@
   transform: scale(1.05);
 }
 
-.download-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  color: white;
-  padding: 12px 22px;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 12px rgba(42, 82, 152, 0.5);
-  position: relative;
-  overflow: hidden;
-}
-
-.download-btn i {
-  margin-right: 8px;
-  font-size: 18px;
-}
-
-.download-btn:hover {
-  color: white;
-  background: linear-gradient(135deg, #2a5298, #1e3c72);
-  transform: scale(1.08);
-  box-shadow: 0px 6px 20px rgba(42, 82, 152, 0.7);
-}
-
-.download-btn:active {
-  transform: scale(0.95);
-  box-shadow: 0px 3px 10px rgba(42, 82, 152, 0.4);
-}
-
-.download-btn::before {
-  content: "";
-  position: absolute;
-  width: 300%;
-  height: 300%;
-  background: rgba(255, 255, 255, 0.2);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  border-radius: 50%;
-  transition: transform 0.5s ease-out;
-}
-
-.download-btn:active::before {
-  transform: translate(-50%, -50%) scale(1);
-}
-
 .progress {
   margin-bottom: 15px;
   position: relative;
@@ -671,6 +620,58 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 12px rgba(42, 82, 152, 0.5);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.download-btn i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.download-btn:hover {
+  color: white;
+  background: linear-gradient(135deg, #2a5298, #1e3c72);
+  transform: scale(1.08);
+  box-shadow: 0px 6px 20px rgba(42, 82, 152, 0.7);
+}
+
+.download-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0px 3px 10px rgba(42, 82, 152, 0.4);
+}
+
+.download-btn::before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: transform 0.5s ease-out;
+}
+
+.download-btn:active::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -720,17 +721,15 @@ section,
   border-bottom: 2px solid var(--accent-color);
 }
 
-.hero .social-links {
-  margin-top: 25px;
-}
-
 .hero .social-links a {
-  font-size: 20px;
+  font-size: 26px;
   display: inline-block;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   line-height: 1;
-  margin-right: 20px;
+  margin-right: 12px;
+  margin-left: 12px;
   transition: 0.3s;
+  justify-content: center;
 }
 
 .hero .social-links a:hover {
@@ -1069,6 +1068,7 @@ section,
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -1150,6 +1150,7 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
 .contact .info-item+.info-item {
   margin-top: 40px;
 }
@@ -1230,6 +1231,7 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
+
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
@@ -1405,6 +1407,7 @@ section,
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
+
 .service-details .service-box {
   padding: 20px;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
@@ -1534,6 +1537,7 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+
 .starter-section {
   /* Add your styles here */
 }
