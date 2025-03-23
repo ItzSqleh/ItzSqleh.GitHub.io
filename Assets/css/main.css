@@ -1032,7 +1032,7 @@ section,
 }
 
 .services .service-item .icon {
-  margin: 0 auto;
+  margin: 1.5rem auto;
   width: 80px;
   height: 80px;
   display: flex;
