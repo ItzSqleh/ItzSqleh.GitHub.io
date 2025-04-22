@@ -724,69 +724,45 @@ section,
   margin: 0;
 }
 
-.about .content ul li {
-  margin-bottom: 16px;
+.about .list-item {
   display: flex;
   align-items: center;
+  margin-bottom: 16px;
   flex-wrap: wrap;
 }
 
-.about .content ul i {
+.about .list-item i {
   font-size: 16px;
   margin-right: 8px;
   color: var(--accent-color);
-  line-height: 0;
 }
 
-.about .content ul strong {
-  margin-right: 6px;
+.about .list-item strong {
   font-weight: 600;
-  min-width: 80px;
-  display: inline-block;
+  margin-right: 6px;
+  min-width: 90px;
 }
 
 .about .list-item span {
-  display: inline-block;
-  max-width: 100%;
-  white-space: nowrap;
+  color: #555;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #555;
-}
-
-.about .content .row > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.about ul {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {
-  .about .content .row > div {
-    margin-bottom: 1rem;
-  }
-
-  .about ul {
-    height: auto;
-  }
-
-  .about .list-item span {
-    white-space: normal;
-  }
-
-  .about .content ul li {
+  .about .list-item {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .about .content ul strong {
+  .about .list-item strong {
     margin-bottom: 4px;
+  }
+
+  .about .list-item span {
+    white-space: normal;
   }
 }
 
