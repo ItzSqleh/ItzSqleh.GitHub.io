@@ -715,28 +715,79 @@ section,
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
+  margin-bottom: 15px;
 }
 
 .about .content ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .about .content ul li {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
-}
-
-.about .content ul strong {
-  margin-right: 10px;
+  flex-wrap: wrap;
 }
 
 .about .content ul i {
   font-size: 16px;
-  margin-right: 5px;
+  margin-right: 8px;
   color: var(--accent-color);
   line-height: 0;
+}
+
+.about .content ul strong {
+  margin-right: 6px;
+  font-weight: 600;
+  min-width: 80px;
+  display: inline-block;
+}
+
+.about .list-item span {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #555;
+}
+
+.about .content .row > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .about .content .row > div {
+    margin-bottom: 1rem;
+  }
+
+  .about ul {
+    height: auto;
+  }
+
+  .about .list-item span {
+    white-space: normal;
+  }
+
+  .about .content ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about .content ul strong {
+    margin-bottom: 4px;
+  }
 }
 
 /*--------------------------------------------------------------
