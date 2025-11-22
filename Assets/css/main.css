@@ -4,39 +4,35 @@
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
-
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root {   
-  --background-color: #f8f9fa;  
-  --default-color: #2d3436;    
-  --heading-color: #34495e;    
-  --accent-color: #3498db;     
+:root {  
+  --background-color: #f0f0f0;  
+  --default-color: #000000;    
+  --heading-color: #000000;    
+  --accent-color: #333333;     
   --surface-color: #ffffff;    
   --contrast-color: #ffffff;   
 }
-
 /* Nav Menu Colors */
 :root {
-  --nav-color: #34495e;
-  --nav-hover-color: #3498db;
+  --nav-color: #000000;
+  --nav-hover-color: #333333;
   --nav-mobile-background-color: #ffffff;
-  --nav-dropdown-background-color: #f8f9fa;
-  --nav-dropdown-color: #2d3436;
-  --nav-dropdown-hover-color: #2980b9;
+  --nav-dropdown-background-color: #f0f0f0;
+  --nav-dropdown-color: #000000;
+  --nav-dropdown-hover-color: #555555;
 }
-
 /* Color Presets */
 .light-background {
-  --background-color: #ecf0f1;
+  --background-color: #f0f0f0;
   --surface-color: #ffffff;
 }
-
 .dark-background {
-  --background-color: #1e272e;
-  --default-color: #f5f6fa;
-  --heading-color: #dfe6e9;
-  --surface-color: #2f3640;
-  --contrast-color: #f5f6fa;
+  --background-color: #1e1e1e;
+  --default-color: #f0f0f0;
+  --heading-color: #e0e0e0;
+  --surface-color: #2a2a2a;
+  --contrast-color: #f0f0f0;
 }
 
 /*--------------------------------------------------------------
@@ -166,6 +162,7 @@ h6 {
 
 /* PHP Email Form Messages
 ------------------------------*/
+
 .php-email-form .error-message {
   display: none;
   background: #df1529;
@@ -749,6 +746,10 @@ section,
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 100%;
+}
+
+.img-fluid {
+  border-radius: 50px;
 }
 
 @media (max-width: 768px) {
@@ -1529,4 +1530,193 @@ section,
 
 .starter-section {
   /* Add your styles here */
+}
+
+/*--------------------------------------------------------------
+# Etc
+--------------------------------------------------------------*/
+
+.hero .persian-name {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  font-family: 'vazir', sans-serif;
+  direction: rtl;
+  text-align: center;
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero .persian-name {
+    font-size: 24px;
+  }
+}
+
+.about.section {
+  direction: rtl;
+  text-align: right;
+}
+
+.about .section-title h2 {
+  font-family: 'vazir', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about .section-title p {
+  font-family: 'vazir', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--default-color);
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.about .content h2 {
+  font-family: 'vazir', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about .content p {
+  font-family: 'vazir', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .about .section-title h2 {
+    font-size: 28px;
+  }
+
+  .about .content h2 {
+    font-size: 24px;
+  }
+
+  .about .content p {
+    font-size: 15px;
+  }
+}
+
+.about .img-fluid {
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.portfolio .portfolio-item {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio .portfolio-wrap {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--surface-color);
+  border-radius: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio .portfolio-wrap:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio .portfolio-wrap img.img-fluid {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  object-position: center;
+  background-color: var(--background-color);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.portfolio .portfolio-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--surface-color);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.portfolio .portfolio-info h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--heading-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.portfolio .portfolio-info p {
+  font-size: 0.9rem;
+  color: var(--default-color);
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.portfolio .portfolio-links {
+  text-align: center;
+}
+
+.portfolio .portfolio-links a {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+.portfolio .portfolio-links a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+@media (max-width: 768px) {
+  .portfolio .portfolio-wrap {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .portfolio .portfolio-wrap {
+    max-width: 400px;
+  }
+
+  .portfolio .portfolio-wrap img.img-fluid {
+    max-height: 300px;
+  }
+
+  .portfolio .portfolio-info {
+    padding: 20px;
+  }
+
+  .portfolio .portfolio-info h4 {
+    font-size: 1.4rem;
+  }
+
+  .portfolio .portfolio-info p {
+    font-size: 1rem;
+    -webkit-line-clamp: 4;
+  }
+
+  .portfolio .portfolio-links a {
+    font-size: 1.4rem;
+  }
 }
