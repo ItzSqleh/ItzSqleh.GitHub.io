@@ -26,21 +26,18 @@
 }
   </script>
 
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
   <link rel="icon" href="Assets/img/favicon.png">
   <link rel="apple-touch-icon" href="Assets/img/favicon.png">
 
-  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/sahel-font@latest/dist/font-face.css" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="Assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="Assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="Assets/vendor/aos/aos.css" rel="stylesheet">
@@ -48,7 +45,6 @@
   <link href="Assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-  <!-- Main CSS File -->
   <link href="Assets/css/main.css" rel="stylesheet">
 </head>
 
@@ -77,21 +73,22 @@
     <section id="hero" class="hero section dark-background">
       <img src="Assets/img/hero-bg.jpg" alt="">
       <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center justify-content-lg-start">
+        <div class="row justify-content-center"> <!-- Remove justify-content-lg-start; media query handles it -->
           <div class="col-lg-9 text-center">
-            <h3 class="persian-name">محمد صالح نصرآبادی</h3>
-            <h2>Mohammad Saleh Nasrabadi</h2>
+            <h2 class="persian-name">محمد صالح نصرآبادی</h2>
+            <h1>Mohammad Saleh Nasrabadi</h1>
             <p>I'm <span class="typed"
                 data-typed-items="Mid-Level Python Developer, Machine Learning Engineer, Content Creator, UI/UX Designer">Mid-Level
                 Python Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links mt-4">
-              <a href="https://www.linkedin.com/in/Sqleh/"><i class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/ItzSqleh"><i class="fa-brands fa-github"></i></a>
-              <a href="https://t.me/ItzSqleh"><i class="bi bi-telegram"></i></a>
-              <a href="https://www.youtube.com/@SalehMc1"><i class="bi bi-youtube"></i></a>
+              <a href="https://www.linkedin.com/in/Sqleh/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/ItzSqleh" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://t.me/ItzSqleh" target="_blank"><i class="bi bi-telegram"></i></a>
+              <a href="https://www.youtube.com/@SalehMc1" target="_blank"><i class="bi bi-youtube"></i></a>
             </div>
             <div class="mt-4">
-              <a href="Assets/files/Resume-MohammadSalehNasrabadi.pdf" class="download-btn simple-solid" download>
+              <a href="Assets/files/Resume-MohammadSalehNasrabadi.pdf" target="_blank" class="download-btn simple-solid"
+                download>
                 <i class="bi bi-download"></i> View My Resume
               </a>
             </div>
@@ -106,7 +103,8 @@
       <div class="container section-title" data-aos="fade-up" dir="rtl">
         <h2>درباره من</h2>
         <p>به عنوان یک برنامه‌نویس پایتون، بیش از دو سال تجربه در طراحی و پیاده‌سازی برنامه‌های مختلفی دارم. کارهایی که
-          انجام می‌دم شامل طراحی سیستم‌های اتوماسیون در ابعاد کوچک، طراحی رابط کاربری، ویرایش ویدیو و تولید محتوا هستند.
+          انجام می‌دم شامل طراحی سیستم‌های اتوماسیون بر پایه هوش مصنوعی در ابعاد کوچک، طراحی رابط کاربری، تدوین ویدیو و
+          تولید محتوا به شکل متنی و بصری هستند.
           در محیط‌های تیمی سعی می‌کنم مسئولیت‌پذیر باشم و از داشتن چند مسئولیت به شکل موازی لذت می‌برم.</p>
       </div>
 
@@ -117,7 +115,7 @@
           </div>
           <div class="col-lg-8 content">
             <h2>علاقه‌مند به هوش مصنوی و خلاقیت</h2>
-            <p class="py-3">من صمن صالح هستم، یک توسعه‌دهنده پایتون با علاقه به یادگیری ماشین، الگوریتم‌ها و حل خلاقانه
+            <p class="py-3">من صالح هستم، یک توسعه‌دهنده پایتون با علاقه به یادگیری ماشین، الگوریتم‌ها و حل خلاقانه
               مشکلات. علاقه من به ساخت راه‌حل‌های کارآمد و تسریع‌سازی فرآیندها باعث شده به سمت این دست از پروژه‌ها برم.
               ذهن من همیشه در حال تحلیل افراد و رویدادهای اطرافش هست و در این مرحله از زندگی‌ام، مسیرم را با علاقه به
               ترکیب خلاقیت با هوش مصنوعی پیش می‌برم. هدف من این هست که با استفاده از داده‌هایی که در دسترس دارم خلق
@@ -489,7 +487,7 @@
                 <p>Nevis Is An Innovative AI-Powered Platform Designed To Empower Professionals And Job Seekers With
                   Actionable Career Insights.</p>
                 <div class="portfolio-links">
-                  <a href="https://github.com/ItzSqleh/CanGrow2-Nevis" title="More Details"><i
+                  <a href="https://github.com/ItzSqleh/CanGrow2-Nevis" title="More Details" target="_blank"><i
                       class="bi bi-link"></i></a>
                 </div>
               </div>
@@ -504,7 +502,8 @@
                 <p>Taskino Is A Comprehensive Project And Task Management Platform Designed To Empower Teams And
                   Individuals In Organizing, Tracking, And Completing Projects Efficiently.</p>
                 <div class="portfolio-links">
-                  <a href="https://github.com/ItzSqleh/Taskino" title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="https://github.com/ItzSqleh/Taskino" title="More Details" target="_blank"><i
+                      class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -518,7 +517,8 @@
                 <p>Gamak Is A Personal Development Tool Designed To Help Users Enhance Their Personal And Professional
                   Skills.</p>
                 <div class="portfolio-links">
-                  <a href="https://github.com/hamednazeri/Gamak" title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="https://github.com/hamednazeri/Gamak" title="More Details" target="_blank"><i
+                      class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -531,7 +531,7 @@
                 <h4>Python Developer</h4>
                 <p>Getting a Python Developer Certificate from Sololearn.</p>
                 <div class="portfolio-links">
-                  <a href="https://www.sololearn.com/certificates/CC-HEQLMSVS" title="More Details"><i
+                  <a href="https://www.sololearn.com/certificates/CC-HEQLMSVS" title="More Details" target="_blank"><i
                       class="bi bi-link"></i></a>
                 </div>
               </div>
@@ -546,7 +546,7 @@
                 <p>Getting a CS50P Certificate From Harvard University.</p>
                 <div class="portfolio-links">
                   <a href="https://certificates.cs50.io/52d421bd-4915-4d83-8eb5-20890f5d21b4.pdf?size=letter"
-                    title="More Details"><i class="bi bi-link"></i></a>
+                    title="More Details" target="_blank"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -559,8 +559,8 @@
                 <h4>Coding for Data</h4>
                 <p>Getting a Coding for Data Certificate from Sololearn.</p>
                 <div class="portfolio-links">
-                  <a href="https://www.sololearn.com/en/certificates/CC-ISGEFGLQ" title="More Details"><i
-                      class="bi bi-link"></i></a>
+                  <a href="https://www.sololearn.com/en/certificates/CC-ISGEFGLQ" title="More Details"
+                    target="_blank"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -573,8 +573,8 @@
                 <h4>CanGrow 2 - Part School</h4>
                 <p>Algorithmic Thinking And Python Programming With A Data Science Approach</p>
                 <div class="portfolio-links">
-                  <a href="https://partschool.ir/cangrow/app/course/clymreh20000kh4fva3pd8h8r" title="More Details"><i
-                      class="bi bi-link"></i></a>
+                  <a href="https://partschool.ir/cangrow/app/course/clymreh20000kh4fva3pd8h8r" title="More Details"
+                    target="_blank"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -587,7 +587,7 @@
                 <h4>SQL Intermediate</h4>
                 <p>Getting a SQL Intermediate Certificate from Sololearn.</p>
                 <div class="portfolio-links">
-                  <a href="https://www.sololearn.com/certificates/CC-GKEKD6S9" title="More Details"><i
+                  <a href="https://www.sololearn.com/certificates/CC-GKEKD6S9" title="More Details" target="_blank"><i
                       class="bi bi-link"></i></a>
                 </div>
               </div>
@@ -601,8 +601,8 @@
                 <h4>Cro.Code.Ile - 1</h4>
                 <p>Introductory Level, Web Design and Development</p>
                 <div class="portfolio-links">
-                  <a href="https://partschool.ir/crocodeile/app/course/clypqssht0009vt8w2q5glqgw"
-                    title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="https://partschool.ir/crocodeile/app/course/clypqssht0009vt8w2q5glqgw" title="More Details"
+                    target="_blank"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -615,7 +615,7 @@
                 <h4>C Intermediate</h4>
                 <p>Getting an Intermediate C Certificate from Sololearn.</p>
                 <div class="portfolio-links">
-                  <a href="https://www.sololearn.com/certificates/CC-EXRLSSVQ" title="More Details"><i
+                  <a href="https://www.sololearn.com/certificates/CC-EXRLSSVQ" title="More Details" target="_blank"><i
                       class="bi bi-link"></i></a>
                 </div>
               </div>
@@ -629,7 +629,7 @@
                 <h4>C++ Intermediate</h4>
                 <p>Getting an Intermediate C++ Certificate from Sololearn.</p>
                 <div class="portfolio-links">
-                  <a href="https://www.sololearn.com/certificates/CC-HCUOAUL4" title="More Details"><i
+                  <a href="https://www.sololearn.com/certificates/CC-HCUOAUL4" title="More Details" target="_blank"><i
                       class="bi bi-link"></i></a>
                 </div>
               </div>
@@ -643,7 +643,7 @@
                 <h4>C# Intermediate</h4>
                 <p>Getting an Intermediate C# Certificate from Sololearn.</p>
                 <div class="portfolio-links">
-                  <a href="https://www.sololearn.com/certificates/CC-FOL2DFI8" title="More Details"><i
+                  <a href="https://www.sololearn.com/certificates/CC-FOL2DFI8" title="More Details" target="_blank"><i
                       class="bi bi-link"></i></a>
                 </div>
               </div>
