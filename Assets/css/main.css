@@ -1540,10 +1540,10 @@ section,
   margin: 0;
   font-size: 2.7rem;
   font-weight: 700;
-  font-family: 'vazir', sans-serif;
+  font-family: 'Vazirmatn', sans-serif;
   direction: rtl;
   text-align: center;
-  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -1558,13 +1558,13 @@ section,
 }
 
 .about .section-title h2 {
-  font-family: 'vazir', sans-serif;
+  font-family: 'Vazirmatn', sans-serif;
   font-size: 36px;
   margin-bottom: 20px;
 }
 
 .about .section-title p {
-  font-family: 'vazir', sans-serif;
+  font-family: 'Vazirmatn', sans-serif;
   font-size: 18px;
   line-height: 1.8;
   color: var(--default-color);
@@ -1573,14 +1573,14 @@ section,
 }
 
 .about .content h2 {
-  font-family: 'vazir', sans-serif;
+  font-family: 'Vazirmatn', sans-serif;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
 .about .content p {
-  font-family: 'vazir', sans-serif;
+  font-family: 'Vazirmatn', sans-serif;
   font-size: 16px;
   line-height: 1.8;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
